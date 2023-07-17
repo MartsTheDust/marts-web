@@ -8,7 +8,8 @@ $ui-colors:
     #e2f8e2,
     #355E3B,
     #6b9c6c,
-    #d9ece5;
+    #d9ece5,
+    #2e5934;
 
 * a, p {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -46,7 +47,7 @@ $ui-colors:
 #true.menu {
     transform: skewX(30deg);
     margin-right: -20%;
-    width: $screen-ratio - 50%;
+    width: $screen-ratio - 90%;
     $pointer-flag: false;
     @include pointer($pointer-flag);
 }
@@ -101,11 +102,12 @@ $ui-colors:
     margin: 50px;
     width: 10%;
     display: block;
-    transition: $duration;
     pointer-events: visible;
 }
 
 #true.option {
+    
+    transition: $duration;
     cursor: pointer;
 }
 
@@ -124,4 +126,31 @@ a.option {
 
 a.option:hover {
     scale: 120%;
+}
+
+// BACK BUTTON STYLE
+.back-btn {
+    position: float;
+    z-index: $stack-pos + 5;
+}
+
+#true.back-btn {
+    z-index: $stack-pos + 5;
+    background-color: nth($ui-colors, 5);
+    border-style: hidden;
+    width: 3%;
+    cursor: pointer;
+}
+
+#true.back-btn:hover {
+    font-size: 200%;
+    overflow: visible;
+    background-color: nth($ui-colors, 3);
+    transition: $duration;
+}
+
+#false.back-btn {
+    opacity: 0%;
+    position: fixed;
+    z-index: $stack-pos;
 }

@@ -8,6 +8,7 @@ import "../styles/Menu.scss";
 const STYLE_STATE = "menu";
 const OPTION_STATE = "option";
 const FOLD_STATE = "fold";
+const BTN = "back-btn";
 var global: boolean = false;
 
 const Menu = () => {
@@ -38,6 +39,16 @@ const Menu = () => {
           </a>
         ))}
       </div>
+      <button
+        className={BTN}
+        id={colState.toString()}
+        onClick={() => {
+          setColState(!colState);
+          global = colState;
+        }}
+      >
+        &gt;
+      </button>
     </>
   );
 };
