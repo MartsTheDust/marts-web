@@ -57,12 +57,24 @@ export function Connect() {
     <>
       <h1>You can find me on:</h1>
       <ul>
-        <li>Facebook</li>
-        <li>Twitter</li>
-        <li>Youtube</li>
-        <li>Instagram</li>
-        <li>Reddit</li>
-        <li>LinkedIn</li>
+        <li>
+          <a href="#">Facebook</a>
+        </li>
+        <li>
+          <a href="#">Twitter</a>
+        </li>
+        <li>
+          <a href="#">Youtube</a>
+        </li>
+        <li>
+          <a href="#">Instagram</a>
+        </li>
+        <li>
+          <a href="#">Reddit</a>
+        </li>
+        <li>
+          <a href="#">LinkedIn</a>
+        </li>
       </ul>
     </>
   );

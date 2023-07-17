@@ -14,7 +14,22 @@ h2 {
     text-decoration: none;
 }
 
+ul {
+    width: 20%;
+}
+
 li {
+    font-size: 150%;
     margin-top: 1%;
     list-style: none;
+    transition: 0.3s;
+}
+
+li:hover {
+    font-size: 200%;
+}
+
+li > a {
+    text-decoration: none;
+    color: black;
 }
