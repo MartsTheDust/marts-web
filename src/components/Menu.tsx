@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Route, Routes, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Submenu, { Home, Intro, About, Hall, Connect, More } from "./Submenu";
 import Backdrop from "./Backdrop";
 import { MenuList } from "./constants/Constants";
