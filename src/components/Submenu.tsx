@@ -14,11 +14,29 @@ export function Home() {
 }
 
 export function Intro() {
-  return <h1>Introduction</h1>;
+  return (
+    <>
+      <h1>Introduction</h1>
+      <h2>
+        I'm Martin Charles R. Dilay, a Junior Programmer, focusing on web
+        development, but I am still interested to expand my horizons with
+        different technologies. For now, I use Java as a back-end language, and
+        React with TypeScript for my front-end practices.
+        <br />I like to lean into the creative side and creating things that add
+        my own interests in one way or another. I like to add individuality in
+        my works.
+      </h2>
+    </>
+  );
 }
 
 export function About() {
-  return <h1>About Me</h1>;
+  return (
+    <>
+      <h1>About Me</h1>
+      <h2></h2>
+    </>
+  );
 }
 
 export function Hall() {
@@ -37,7 +55,7 @@ export function Hall() {
 export function Connect() {
   return (
     <>
-      <h1>You can find me in:</h1>
+      <h1>You can find me on:</h1>
       <ul>
         <li>Facebook</li>
         <li>Twitter</li>
@@ -51,5 +69,11 @@ export function Connect() {
 }
 
 export function More() {
-  return <h1>Here's More!</h1>;
+  return (
+    <h2>
+      <i>Marts The Dust</i> is a forced pun of my nickname combined with "Bites
+      The Dust", a Queen song and a JoJo stand. This has become my online
+      username and identity for various social media platforms.
+    </h2>
+  );
 }
