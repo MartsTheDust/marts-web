@@ -1,0 +1,23 @@
+$screen-ratio: 100%;
+$stack-pos: 1;
+$duration : 0.60s;
+$ui-colors:     
+    #e2f8e2,
+    #355E3B,
+    #6b9c6c;
+
+.backdrop {
+    background-color: nth($ui-colors, 1);
+    transition: $duration;
+    z-index: $stack-pos + 1;
+    position:relative;
+    height: 100vh;
+}
+
+#true.backdrop {
+    width: 0%;
+}
+
+#false.backdrop {
+    width: $screen-ratio - 35%;
+}

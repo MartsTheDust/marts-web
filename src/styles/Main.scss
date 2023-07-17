@@ -1,0 +1,17 @@
+$screen-ratio: 100%;
+$duration : 0.60s;
+$ui-colors:     
+    #e2f8e2,
+    #355E3B,
+    #6b9c6c;
+
+.main-body {
+  display: flex;
+  height: 100vh;
+  z-index: -1;
+  background-color: nth($ui-colors, 1 );
+}
+
+.main-body div {
+  flex: auto;
+}
